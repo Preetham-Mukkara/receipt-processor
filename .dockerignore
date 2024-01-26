@@ -1,0 +1,25 @@
+# Exclude build artifacts
+build/
+bin/
+*.iml
+.gradle/
+
+# Exclude version control directories
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# Exclude unnecessary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Exclude development and editor-specific directories
+.idea/
+.vscode/
+
+# Exclude test directories if not needed in the production image
+src/test/
