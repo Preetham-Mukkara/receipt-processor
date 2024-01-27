@@ -6,6 +6,8 @@ Run these two commands:
 The first command will build a docker image named app and the second command will run the app image and expose the localhost 8080 port.
 For example, after executing both the above commands you should be able to hit the GET /receipts/{id}/points endpoint via http://localhost:8080/receipts/{id}/points and the POST endpoint using a similar format.
 
+**NOTE**: Building the docker image may take upto 5 minutes, please give it sufficient time! Thanks :)
+
 ## Micronaut 4.2.4 Documentation
 
 - [User Guide](https://docs.micronaut.io/4.2.4/guide/index.html)
