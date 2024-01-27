@@ -16,6 +16,8 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     compileOnly("io.micronaut:micronaut-inject:1.2.5")
     annotationProcessor("io.micronaut:micronaut-inject-java:1.2.5")
+    implementation("io.micronaut.validation:micronaut-validation")
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
     compileOnly("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut:micronaut-http-client")

@@ -1,15 +1,25 @@
 package com.receipt;
 
 import io.micronaut.core.annotation.Introspected;
+import io.micronaut.core.annotation.NonNull;
 import io.micronaut.serde.annotation.Serdeable;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 
 @Introspected
 @Serdeable
 public class Receipt {
+    @NonNull
     private String retailer;
+    @NotNull
     private String purchaseDate;
+    @NotNull
     private String purchaseTime;
+    @NotNull
+    @Valid
     private Item[] items;
+    @NotNull
     private String total;
 
     public void setRetailer(String retailer){
